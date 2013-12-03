@@ -5,8 +5,9 @@
   {registered, []},
   {applications, [
                   kernel,
-                  stdlib
+                  stdlib,
+                  cowboy
                  ]},
   {mod, { yo_app, []}},
-  {env, []}
+  {env, [{http_port, 8080}]}
  ]}.
