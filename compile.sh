@@ -1,0 +1,1 @@
+./rebar get-deps compile
