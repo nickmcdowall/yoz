@@ -1,4 +1,4 @@
-{application, yo,
+{application, yoz,
  [
   {description, ""},
   {vsn, "1"},
@@ -8,6 +8,6 @@
                   stdlib,
                   cowboy
                  ]},
-  {mod, { yo_app, []}},
+  {mod, { yoz_app, []}},
   {env, [{http_port, 8080}]}
  ]}.

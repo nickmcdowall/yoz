@@ -1,11 +1,11 @@
 
-# From the yo root directory use rebar to compile the application.
+# From the yoz root directory use rebar to compile the application.
 ./rebar get-deps compile
 
 # Start the application locally
-erl -pa ebin deps/*/ebin -s yo
+erl -pa ebin deps/*/ebin -s yoz
 
-# Verify that yo is running:
+# Verify that yoz is running:
 application:which_applications().
 
 # Use the app

@@ -1,4 +1,4 @@
--module(yo_handler).
+-module(yoz_handler).
 
 -export([init/3]).
 -export([handle/2]).

@@ -1,1 +1,1 @@
-erl -pa ebin deps/*/ebin -s yo
+erl -pa ebin deps/*/ebin -s yoz

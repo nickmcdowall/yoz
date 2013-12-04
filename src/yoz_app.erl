@@ -1,4 +1,4 @@
--module(yo_app).
+-module(yoz_app).
 
 -behaviour(application).
 
@@ -18,7 +18,7 @@ start(_StartType, _StartArgs) ->
     TransOpts = [{port, Port}],
     ProtoOpts = [{env, [{dispatch, Dispatch}]}],
     {ok, _}   = cowboy:start_http(http, ?C_ACCEPTORS, TransOpts, ProtoOpts),
-    yo_sup:start_link().
+    yoz_sup:start_link().
 
 stop(_State) ->
     ok.
@@ -28,7 +28,7 @@ stop(_State) ->
 %% ===================================================================
 routes() ->
     [
-     {'_', [ {"/", yo_handler, []} ] }
+     {'_', [ {"/", yoz_handler, []} ] }
     ].
 
 port() ->

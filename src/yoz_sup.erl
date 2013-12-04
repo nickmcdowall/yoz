@@ -1,4 +1,4 @@
--module(yo_sup).
+-module(yoz_sup).
 
 -behaviour(supervisor).
 
