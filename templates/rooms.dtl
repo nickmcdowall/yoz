@@ -1,0 +1,7 @@
+<html>
+	<body>
+	<h1>Yoz Rooms</h1>
+		You are now in room <em>{{ room }}</em>.
+		Your are at host <em>{{ host}}</em>.
+	</body>
+</html>

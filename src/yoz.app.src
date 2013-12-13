@@ -1,6 +1,6 @@
 {application, yoz,
  [
-  {description, ""},
+  {description, "An amazing app"},
   {vsn, "1"},
   {registered, []},
   {applications, [
