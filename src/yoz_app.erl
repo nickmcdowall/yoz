@@ -28,11 +28,11 @@ stop(_State) ->
 %% ===================================================================
 routes() ->
     [
-     {"[...]", 	[
-				  {"/rooms/[...]", 	rooms_handler, 	[]}, 
-				  {"/", 			yoz_handler, 	[]} 
-	 ]}
-    ].
+	 {"[...]", [
+		{"/websocket", ws_handler, []},
+		{"/scripts/[...]", cowboy_static, [{directory, {priv_dir, yoz, ["scripts"]}}]},
+		{"/[...]", yoz_handler, []} % Needs to go last - will match on anything.
+	 ]}].
 
 port() ->
     case os:getenv("PORT") of

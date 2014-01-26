@@ -2,3 +2,4 @@ deps
 ebin
 .project
 /.settings
+/erl_crash.dump
