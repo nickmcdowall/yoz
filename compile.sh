@@ -1,2 +1,2 @@
 #!/bin/bash
-./rebar get-deps compile
+./rebar clean get-deps compile
